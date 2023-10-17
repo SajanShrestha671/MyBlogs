@@ -1,0 +1,278 @@
+{%extends 'base.html' %}
+
+{%block title%} Welcome to Sajan Blogs {%endblock%}
+{% load static %}
+{%block content%}
+<style>
+  .containerEducation {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  
+}
+
+.containerEducation h2 {
+  color: #2e2984;
+  font-weight: bold;
+}
+
+.containerEducation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.containerEducation li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.containerEducation h3 {
+  margin: 0;
+  color: #2e2984;
+}
+
+.containerEducation p {
+  margin: 5px 0;
+}
+
+.containerEducation span {
+  display: block;
+  margin-top: 5px;
+}
+
+.containerEducation a {
+  color: #2e2984;
+  text-decoration: none;
+}
+
+.containerEducation a:hover {
+  text-decoration: underline;
+}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.containerDetails {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.containerDetails h2 {
+  color: #2e2984;
+  font-weight: bold;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.details-list li {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.details-list li span {
+  display: block;
+  margin-top: 5px;
+}
+
+.details-list a {
+  color: #2e2984;
+  text-decoration: none;
+}
+
+.details-list a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 10px;
+  color: #2e2984;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff9900;
+}
+
+.social-icons i {
+  font-size: 30px;
+}
+.skill-list {
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  padding: 4px 15px;
+  margin: 0 4px;
+  text-decoration: none;
+  background-color: #6366f1;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  
+}
+
+
+</style>
+<body style="background-color: white; ">
+<div class="container" style="padding: 1% 5%;">
+    <div class="row">
+      <h2 style="padding: 8px 10px;color: #2e2984;font-weight: bold;">About Me</h2>
+      <div class="col-md-8">
+        
+        <!-- About Me Section -->
+        <div class="d-flex align-items-center mb-4" style="background-color: #6366f1;color: white; border-radius: 15px;">
+          <div class="row">
+            <div class="col-sm-9" style="font-size:20px; padding: 20px;">
+              <p>Hello! I'm Sajan Shrestha. I am a software developer, focused on javascript and python. Currently, I am living in sydney, Australia and working as freelancer.
+                <br> And I do blogging as well.
+              </p>
+
+            </div>
+            <div class="col-sm-3" style="font-size:20px; margin-left: -25px; ">
+              <img src="{% static '/images/profile.jpg' %}" alt="Profile Picture"  class="img-fluid" style="height: 200px; width: 239px;margin: 12px;border-radius: 50%;">
+
+            </div>
+          </div>
+          <!-- <div class="myIntro" style="padding: 5px;">
+          </div>
+          <div class="imgContainer" style="padding: 5px; margin: 5px;">
+
+          </div> -->
+
+        </div>
+        <div class="containerEducation">
+          <h2 style="color: #2e2984;font-weight: bold;">Education</h2>
+          <ul>
+            <li>
+              <h3>Bachelor of Information Techonology</h3>
+              <p>King's own Intitute</p><span><a href="https://koi.edu.au/">https://koi.edu.au/</a></span>
+            </li>
+            <li>
+              <h3>Diploma of Information Techonology</h3>
+              <p>Australian Techonology and Inovation College</p><span><a href="http://www.atic.edu.au/index.html">http://www.atic.edu.au/index.html</a></span>
+            </li>
+            <li>
+              <h3>A Level (Major in Science)</h3>
+              <p>Novel Academy</p><span><a href="https://www.novel.edu.np/">https://www.novel.edu.np/</a></span>
+            </li>
+          </ul>
+        </div>
+        <div class="containerInterest">
+          <h2 style="color: #2e2984;font-weight: bold;">Interest</h2>
+          <p>I like to be updated with new Techonology. Beside that I read books, write content and like to make new friends.  <br>
+          Moreover, I like cooking and I am a proffessional chef.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!-- Content for the second column -->
+        <div class="containerDetails" >
+            <h2 >Details</h2>
+            <ul class="details-list">
+                <li>Email:<span><a href="mailto:shresthasajan13@gmail.com">Shresthasajan13@gmail.com</a></span></li>
+                <li>Linkedin:<span><a href="https://www.linkedin.com/in/sajanshrestha26/">https://www.linkedin.com/in/sajanshrestha26/</a></span></li>
+                <li>Github:<span><a href="https://github.com/SajanShrestha671">https://github.com/SajanShrestha671</a></span></li>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/yourprofile" target="_blank" style="margin: 10px;">
+                    <i class="fab fa-facebook" ></i>
+                  </a>
+                  <a href="https://twitter.com/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://twitter.com/yourprofile" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://twitter.com/yourprofile" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+            </ul>
+          </div>
+          <hr>
+          <!-- SkillsContianer -->
+          <div class="containerSkills">
+            <h2>Skills</h2>
+            <ul class="skill">
+              <li>
+                <p>Front-End Development:</p>
+                <span>
+                  <ul class="skill-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                  </ul>
+                </span>
+              </li>
+              <li>
+                <p>Back-End Development:</p>
+                <span>
+                  <ul class="skill-list">
+                    <li>Python</li>
+                    <li>Nodejs</li>
+                    <li>Php</li>
+                    <li>C#</li>
+                  </ul>
+                </span>
+              </li>
+              <li>
+                <p>Database:</p>
+                <span>
+                  <ul class="skill-list">
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                    <li>MongoDb</li>
+                    <li>Postgress</li>
+                  </ul>
+                </span>
+              </li>
+              <li>
+                <p>Framework:</p>
+                <span>
+                  <ul class="skill-list" style="margin: 2px 0;">
+                    <li>Flask</li>
+                    <li>Django</li>
+                    <li>ExpressJs</li>
+                    <li>Laravel</li>
+                    
+                  </ul>
+                  <ul class="skill-list">
+                    <li>Asp.Net</li>
+                    <li>Angular</li>
+                  </ul>
+                </span>
+              </li>
+            </ul>
+          </div>
+        <hr>
+        <div class="containerSideProject">
+            <h2 style="color: #2e2984;font-weight: bold;">Side projects</h2>
+            <ul class="details-list">
+                <li>Side Project 1</li>
+                <li>Side Project 2</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+{% endblock %}

@@ -1,0 +1,34 @@
+{%extends 'base.html' %}
+
+{%block title%} My projects {%endblock%}
+
+{%block content%}
+<div class="container mt-5">
+    <h1 class="mb-4">Post Table</h1>
+
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Project ID</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Link</th>
+                <th>Github</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for x in myProject %}
+            <tr>
+                <td>{{ x.project_id }}</td>
+                <td>{{x.title}}</td>
+                <td>{{ x.content }}</td>
+                <td>{{ x.link }}</td>
+                <td>{{ x.github }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}

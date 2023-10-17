@@ -1,0 +1,17 @@
+{%extends 'base.html' %}
+
+{%block title%} {{ singlepost.title }}{%endblock%}
+
+{% block content %}
+<body>
+    <div class="card">
+        <div class="card-header ">
+            <h1 class="card-title">{{ singlepost.title }}</h1>
+            <small class="text-muted">[{{ singlepost.date }}]</small>
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{ singlepost.content | safe}}</p>
+        </div>
+    </div>
+</body>
+{% endblock %}

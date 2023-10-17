@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+
+{%block title%} Welcome to Sajan Blogs {%endblock%}
+{% load static %}
+{%block content%}
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/images/cover.jpg' %}" alt="cover" class="d-block img-fluid" style="width:100%; padding: 0 8%; max-height: 650px;">
+        <div class="carousel-caption position-absolute top-60 start-50 translate-middle ">
+            <h1>Sajan Shrestha</h1>
+            <p>Software Developer</p>
+        </div>
+      </div>
+    </div>
+    <!-- who I am -->
+    <div class="containerWhoIam">
+      <h1 class="purposeTitle">Purpose of the website</h1>
+      <p>The purpose of developing this website is to showcase my knowlodge and projects. I have include the my profile, blogs and project in this website. Most of the blogs are technical where I have share the knowlodge what I have learned during my learning period. You can find my Linked, Github and other social media profile link in this website. If you want to collaborate with me and share the knowlodge, feel free to contact me. </p>
+      <blockquote>Thanks</blockquote>
+    </div>
+
+    <!-- Tools I use -->
+    <div class="containerTools">
+      <h1 class="toolsTitle">Programming Languages, Framework and Tools</h1>
+
+    </div>
+
+
+{% endblock %}

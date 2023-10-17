@@ -1,0 +1,169 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+.imageClass{
+    padding: 20px;
+}
+
+.col-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.col-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.catsTitle{
+    background-color: aqua;
+}
+
+/* Navigation bar */
+
+    .navbar {
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        font-family: 'Your-Logo-Font', sans-serif;
+        font-size: 28px;
+        color: #007bff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s, font-size 0.3s;
+    }
+    
+
+    .navbar-toggler-icon {
+        background-color: #333;
+    }
+
+    .navbar-nav .nav-link {
+        color: #333;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #2e2984;
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-color: #2e2984;
+    }
+
+    .btn-outline-success {
+        border-color: #2e2984;
+        color: #2e2984;
+        
+    }
+
+    .btn-outline-success:hover {
+        background-color: #2e2984;
+        color: white;
+    }
+
+    /* Index page */
+    .containerWhoIam {
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      text-align: center;
+    }
+    
+    .containerWhoIam p {
+      margin: 0;
+      color: #333;
+      line-height: 1.5;
+    }
+    
+    .containerWhoIam blockquote {
+      margin-top: 20px;
+      font-style: italic;
+      color: #666;
+    }
+    .purposeTitle{
+      color: #2e2984;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .toolsTitle{
+      color: #2e2984;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    /* About us page */
+.containerEducation {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.containerEducation h2 {
+  color: #2e2984;
+  font-weight: bold;
+}
+
+.containerEducation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.containerEducation li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.containerEducation h3 {
+  margin: 0;
+  color: #2e2984;
+}
+
+.containerEducation p {
+  margin: 5px 0;
+}
+
+.containerEducation span {
+  display: block;
+  margin-top: 5px;
+}
+
+.containerEducation a {
+  color: #2e2984;
+  text-decoration: none;
+}
+
+.containerEducation a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  background-color: #2e2984;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0%;
+  position: inherit;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ff9900;
+}

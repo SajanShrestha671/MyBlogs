@@ -1,0 +1,35 @@
+{%extends 'base.html' %}
+
+{%block title%} Welcome to Sajan Blogs {%endblock%}
+
+{% block content %}
+<!-- Blog Section -->
+<div class="container">
+    <div class="text-center my-5">
+        <h2>Welcome to blogs</h2>
+      <hr />
+    </div>
+
+    <div class="container mt-5" style="margin-bottom: 15px;">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+          {% for x in cats %}
+          <div class="col">
+              <div class="card h-100 shadow">
+                <div class="containerBlogsImage">
+                  <img src="/media/{{ x.image }}" class="card-img-top fixed-image d-block mx-auto" style="height: 200px;"alt="{{ x.title }}">
+                </div>
+                  <div class="card-body bg-light" style="bottom: 0; position: relative;">
+                      <h5 class="card-title"><a href="category/{{ x.cat_id }}" class="text-decoration-none">{{ x.title }}</a></h5>
+                      <p class="card-text">Added on {{ x.add_date }}</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+  
+  
+
+</div>
+{% endblock%}
+
